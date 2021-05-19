@@ -1,1 +1,74 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import './assets/highcharts.css';
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #e0e5ef;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 750px));
+    grid-gap: 10px;
+    place-content: center;
+    margin-top: 10px;
+    background-color: #e0e5ef;
+    border: 0;
+    &>* {
+        border-radius: 20px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        background-color: white;
+    }
+    &2 {
+        grid-template-columns: repeat(auto-fit, minmax(750px, 1000px));
+    }
+}
+
+/* Define the stop colors */
+
+// #gradient-0 stop {
+//     stop-color: #506ef9;
+// }
+
+// #gradient-0 stop[offset="0"] {
+//     stop-opacity: 0.25;
+// }
+
+// #gradient-0 stop[offset="1"] {
+//     stop-opacity: 0;
+// }
+
+
+// /* Apply the gradients */
+
+// // .highcharts-plot-background {
+// // 	fill: url(#gradient-1);
+// // }
+// .highcharts-color-0 {
+//     fill: #506ef9;
+//     stroke: #506ef9;
+// }
+
+// .highcharts-color-0 .highcharts-area {
+//     fill-opacity: 1;
+//     fill: url(#gradient-0);
+// }
